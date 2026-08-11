@@ -1,4 +1,4 @@
-/*Necessita executar npm install prompt-sync
+//Necessita executar npm install prompt-sync
 import promptSync from 'prompt-sync';
 const prompt = promptSync({sigint: true});
 
@@ -9,19 +9,3 @@ let nota2 = Number(prompt("Digite a segunda nota: "));
 let media = (nota1 + nota2)/2;
 console.log(`Aluno: ${nome}`);
 console.log(`Média: ${media}`);
-*/
-
-//D1) Escrever um programa JavaScript que solicita a quantidade de sucos e sanduíches consumidos pelos clientes de uma mesa de uma lanchonete e exibe o recibo com os valores parciais e o total final a pagar conforme abaixo
-import promptSync from "prompt-sync";
-const prompt = promptSync({sigint: true});
-
-const precoSuco = 1;
-const precoSanduiche = 2;
-
-let qntSuco = Number(prompt("Digite a quantidade de sucos consumidos: "));
-let qntSanduiche = Number(prompt("Digite a quantidade de sanduíches consumidos: "));
-let qntConsumida = qntSuco*precoSuco + qntSanduiche*precoSanduiche;
-
-console.log(`Quantidade de sucos consumidos: ${qntSuco}`);
-console.log(`Quantidade de sanduíches consumidos: ${qntSanduiche}`);
-console.log(`Valor que o cliente irá ter que pagar: R$${qntConsumida}`);
