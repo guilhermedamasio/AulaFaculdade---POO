@@ -11,4 +11,4 @@ let qntConsumida = qntSuco*precoSuco + qntSanduiche*precoSanduiche;
 
 console.log(`Quantidade de sucos consumidos: ${qntSuco}`);
 console.log(`Quantidade de sanduíches consumidos: ${qntSanduiche}`);
-console.log(`Valor que o cliente irá ter que pagar: R$${qntConsumida}`);
+console.log(`Valor que o cliente irá ter que pagar: R$${qntConsumida}\n`);
