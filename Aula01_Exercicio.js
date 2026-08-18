@@ -7,7 +7,18 @@ const precoSanduiche = 2;
 
 let qntSuco = Number(prompt("Digite a quantidade de sucos consumidos: "));
 let qntSanduiche = Number(prompt("Digite a quantidade de sanduíches consumidos: "));
-let qntConsumida = qntSuco*precoSuco + qntSanduiche*precoSanduiche;
+
+let qntConsumidaSuco = qntSuco*precoSuco;
+let qntConsumidaSanduiche = qntSanduiche*precoSanduiche;
+
+if (qntSuco > 10){
+    qntConsumidaSuco = qntConsumidaSuco * 0.8; // Aplica desconto de 20%
+}
+if (qntSanduiche > 10){
+    qntConsumidaSanduiche = qntConsumidaSanduiche * 0.8;
+}
+
+let qntConsumida = qntConsumidaSuco + qntConsumidaSanduiche;
 
 console.log(`Quantidade de sucos consumidos: ${qntSuco}`);
 console.log(`Quantidade de sanduíches consumidos: ${qntSanduiche}`);
