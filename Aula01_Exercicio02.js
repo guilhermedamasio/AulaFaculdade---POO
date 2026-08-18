@@ -1,4 +1,3 @@
-//D1) Escrever um programa JavaScript que solicita a quantidade de sucos e sanduíches consumidos pelos clientes de uma mesa de uma lanchonete e exibe o recibo com os valores parciais e o total final a pagar conforme abaixo
 import promptSync from "prompt-sync";
 const prompt = promptSync({sigint: true});
 
